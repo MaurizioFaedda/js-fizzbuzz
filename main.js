@@ -20,8 +20,17 @@
 // }
 
 
-var numero1 = parseInt(prompt("Inserisci un divisore"));
-var numero2 = parseInt(prompt("Inserisci un secondo divisore"));
+// l'utente inserisce due divisori e vengono stampati tutti i multipli
+
+do {
+    var numero1 = parseInt(prompt("Inserisci un divisore"));
+    var numero2 = parseInt(prompt("Inserisci un secondo divisore"));
+    if ((isNaN(numero1)) || (isNaN(numero2))) {
+        alert("Puoi inserire solo numeri. Riprova!")
+    }
+    i++
+} while ((isNaN(numero1)) || (isNaN(numero2)));
+
 
 
 for (var i = 1; i <= 100; i++) {
